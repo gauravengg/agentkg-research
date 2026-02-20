@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "question": "how many papers are in the database",
+    "ground_truth": "There are 5 papers in the database",
+    "expected_tool": "get_statistics",
+    "category": "statistics"
+  },
+  {
+    "id": 2,
+    "question": "how many authors are there",
+    "ground_truth": "There are 13 authors in the database",
+    "expected_tool": "get_statistics",
+    "category": "statistics"
+  },
+  {
+    "id": 3,
+    "question": "what are the total citations in the database",
+    "ground_truth": "The total citations are 32852",
+    "expected_tool": "get_statistics",
+    "category": "statistics"
+  },
+  {
+    "id": 4,
+    "question": "papers about graph neural networks",
+    "ground_truth": "Graph Neural Networks: A Review of Methods and Applications is a relevant paper",
+    "expected_tool": "keyword_search",
+    "category": "search"
+  },
+  {
+    "id": 5,
+    "question": "papers about deep learning",
+    "ground_truth": "Deep Learning on Graphs: A Survey is a relevant paper",
+    "expected_tool": "keyword_search",
+    "category": "search"
+  },
+  {
+    "id": 6,
+    "question": "papers about attention mechanism",
+    "ground_truth": "CBAM and Attention Mechanisms in Graph Neural Networks are relevant",
+    "expected_tool": "keyword_search",
+    "category": "search"
+  },
+  {
+    "id": 7,
+    "question": "papers from IIT",
+    "ground_truth": "Papers from IIT Tirupati authors include Graph Neural Networks and Deep Learning papers",
+    "expected_tool": "institution_search",
+    "category": "institution"
+  },
+  {
+    "id": 8,
+    "question": "papers from IIT Tirupati",
+    "ground_truth": "Authors from IIT Tirupati wrote Graph Neural Networks and Deep Learning papers",
+    "expected_tool": "institution_search",
+    "category": "institution"
+  },
+  {
+    "id": 9,
+    "question": "papers by Dr. Sarah Johnson",
+    "ground_truth": "Dr. Sarah Johnson authored Graph Neural Networks: A Review of Methods and Applications",
+    "expected_tool": "author_search",
+    "category": "author"
+  },
+  {
+    "id": 10,
+    "question": "papers by Dr. Michael Chen",
+    "ground_truth": "Dr. Michael Chen authored Graph Neural Networks paper and Deep Learning on Graphs",
+    "expected_tool": "author_search",
+    "category": "author"
+  },
+  {
+    "id": 11,
+    "question": "papers with more than 100 citations",
+    "ground_truth": "CBAM (21761), Training data-efficient image transformers (8498), Graph Neural Networks (1245), Deep Learning on Graphs (892), Attention Mechanisms (456) all have more than 100 citations",
+    "expected_tool": "cypher_search",
+    "category": "filter"
+  },
+  {
+    "id": 12,
+    "question": "papers with more than 1000 citations",
+    "ground_truth": "CBAM (21761), Training data-efficient image transformers (8498), Graph Neural Networks (1245) have more than 1000 citations",
+    "expected_tool": "cypher_search",
+    "category": "filter"
+  },
+  {
+    "id": 13,
+    "question": "papers published after 2020",
+    "ground_truth": "Attention Mechanisms in Graph Neural Networks (2022) and Graph Neural Networks Review (2021) were published after 2020",
+    "expected_tool": "cypher_search",
+    "category": "filter"
+  },
+  {
+    "id": 14,
+    "question": "papers published in 2020",
+    "ground_truth": "Training data-efficient image transformers (2020) and Deep Learning on Graphs (2020) were published in 2020",
+    "expected_tool": "cypher_search",
+    "category": "filter"
+  },
+  {
+    "id": 15,
+    "question": "papers about graph",
+    "ground_truth": "Graph Neural Networks: A Review, Deep Learning on Graphs, and Attention Mechanisms in Graph Neural Networks are about graphs",
+    "expected_tool": "keyword_search",
+    "category": "search"
+  },
+  {
+    "id": 16,
+    "question": "how many topics are there",
+    "ground_truth": "There are 3 topics in the database",
+    "expected_tool": "get_statistics",
+    "category": "statistics"
+  },
+  {
+    "id": 17,
+    "question": "papers with less than 500 citations",
+    "ground_truth": "Attention Mechanisms in Graph Neural Networks has 456 citations which is less than 500",
+    "expected_tool": "cypher_search",
+    "category": "filter"
+  },
+  {
+    "id": 18,
+    "question": "papers about transformers",
+    "ground_truth": "Training data-efficient image transformers and CBAM attention-based papers are relevant",
+    "expected_tool": "keyword_search",
+    "category": "search"
+  },
+  {
+    "id": 19,
+    "question": "how many institutions are there",
+    "ground_truth": "There is 1 institution in the database which is IIT Tirupati",
+    "expected_tool": "get_statistics",
+    "category": "statistics"
+  },
+  {
+    "id": 20,
+    "question": "papers with more then 10 citation",
+    "ground_truth": "All 5 papers have more than 10 citations",
+    "expected_tool": "cypher_search",
+    "category": "filter"
+  }
+]

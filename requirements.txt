@@ -1,0 +1,9 @@
+# Research Knowledge Graph - Python Dependencies
+
+neo4j==5.16.0
+pydantic==2.5.3
+requests==2.31.0
+python-dotenv==1.0.0
+pandas==2.1.4
+loguru==0.7.2
+tqdm==4.66.1
